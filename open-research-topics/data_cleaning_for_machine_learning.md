@@ -21,5 +21,5 @@ This project aims at designing and implementing a new data cleaning system that 
 
 
 ## References
-[1] Mahdavi, M., Abedjan, Z., Castro Fernandez, R., Madden, S., Ouzzani, M., Stonebraker, M., & Tang, N. (2019, June). Raha: A configuration-free error detection system. In Proceedings of the 2019 International Conference on Management of Data (pp. 865-882).
+[1] Mahdavi, M., Abedjan, Z., Castro Fernandez, R., Madden, S., Ouzzani, M., Stonebraker, M., & Tang, N. (2019, June). Raha: A configuration-free error detection system. In Proceedings of the 2019 International Conference on Management of Data (pp. 865-882).    
 [2] Mahdavi, M., & Abedjan, Z. (2020). Baran: Effective error correction via a unified context representation and transfer learning. Proceedings of the VLDB Endowment, 13(12), 1948-1961.
