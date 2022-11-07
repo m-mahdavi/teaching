@@ -1,4 +1,4 @@
-# Human AI Cooperation
+# Human AI Cooperation on Dynamic Networks
 how AI affects human life, and how humans trust AI, which ended up working on an interesting problem of how humans and AI cooperate dynamics networks.
 Adam Grant, in his book [give and take], claims that human who cooperates will end up being more successful than those who do not. However, recently AI has increasingly become an important part of human life. In which AI may interact as same as a human. Thus, these interesting questions were raised:
 - Do humans trust AI?
