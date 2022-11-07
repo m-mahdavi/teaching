@@ -1,0 +1,39 @@
+pip3 install --upgrade pip
+
+pip3 install -U lxml
+pip3 install -U bs4
+pip3 install -U beautifulsoup4
+
+pip3 install -U nltk
+pip3 install -U spacy
+pip3 install -U textacy
+pip3 install -U gensim
+
+pip3 install -U tweepy
+pip3 install -U sumy
+pip3 install -U summarizer
+
+pip3 install -U transformers
+pip3 install -U simpletransformers
+
+pip3 install -U numpy
+pip3 install -U pandas
+pip3 install -U scipy
+
+pip3 install -U scikit-learn
+pip3 install -U keras
+pip3 install -U tensorflow
+
+pip3 install -U matplotlib
+pip3 install -U seaborn 
+pip3 install -U plotly
+
+pip3 install -U ipython
+pip3 install -U jupyterlab
+pip3 install -U notebook
+
+pip3 install -U urllib3
+pip3 install -U requests
+pip3 install -U setuptools
+
+
