@@ -31,6 +31,8 @@ pip3 install -U plotly
 pip3 install -U ipython
 pip3 install -U jupyterlab
 pip3 install -U notebook
+pip3 install -U nbconvert
+pip3 install -U pondoc
 
 pip3 install -U urllib3
 pip3 install -U requests
