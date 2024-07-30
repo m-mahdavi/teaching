@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomoku Game</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #000;
+            font-size: 20px;
+        }
+        .player1 {
+            color: red;
+        }
+        .player2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="team-info">
+        <h2>Player 1: {{ team_info.player1.name }} ({{ team_info.player1.symbol }})</h2>
+        <h2>Player 2: {{ team_info.player2.name }} ({{ team_info.player2.symbol }})</h2>
+    </div>
+    <div>
+        <br><br><br>
+    </div>
+    <table id="gomoku-board"></table>
+    <script>
+        function updateBoard(board) {
+            const table = document.getElementById('gomoku-board');
+            table.innerHTML = '';
+            for (let i = 0; i < board.length; i++) {
+                const row = document.createElement('tr');
+                for (let j = 0; j < board[i].length; j++) {
+                    const cell = document.createElement('td');
+                    if (board[i][j] == -1) {
+                        cell.textContent = 'X';
+                        cell.classList.add('player1');
+                    } else if (board[i][j] == 1) {
+                        cell.textContent = 'O';
+                        cell.classList.add('player2');
+                    }
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+        }
+
+        function fetchBoard() {
+            fetch('/get_board')
+                .then(response => response.json())
+                .then(board => updateBoard(board));
+        }
+
+        function playTurn() {
+            fetch('/play_turn')
+                .then(response => response.json())
+                .then(data => {
+                    updateBoard(data.board);
+                    if (data.winner !== null) {
+                        setTimeout(() => {
+                            const winnerName = data.winner == -1 ? '{{ team_info.player1.name }}' : '{{ team_info.player2.name }}';
+                            alert(`Player ${winnerName} wins!`);
+                        }, 100); // Delay to ensure board is updated before alert
+                    } else {
+                        setTimeout(playTurn, 1000);
+                    }
+                });
+        }
+
+        fetchBoard();
+        playTurn();
+    </script>
+</body>
+</html>
