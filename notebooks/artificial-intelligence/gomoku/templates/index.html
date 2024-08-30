@@ -26,6 +26,7 @@
     </style>
 </head>
 <body>
+    <h1>AICUP: Gomoku Tournament</h1>
     <div id="team-info">
         <h2>Player 1: {{ team_info.player1.name }} ({{ team_info.player1.symbol }})</h2>
         <h2>Player 2: {{ team_info.player2.name }} ({{ team_info.player2.symbol }})</h2>
@@ -42,10 +43,10 @@
                 const row = document.createElement('tr');
                 for (let j = 0; j < board[i].length; j++) {
                     const cell = document.createElement('td');
-                    if (board[i][j] == -1) {
+                    if (board[i][j] == 1) {  // Player 1
                         cell.textContent = 'X';
                         cell.classList.add('player1');
-                    } else if (board[i][j] == 1) {
+                    } else if (board[i][j] == 2) {  // Player 2
                         cell.textContent = 'O';
                         cell.classList.add('player2');
                     }
@@ -68,7 +69,7 @@
                     updateBoard(data.board);
                     if (data.winner !== null) {
                         setTimeout(() => {
-                            const winnerName = data.winner == -1 ? '{{ team_info.player1.name }}' : '{{ team_info.player2.name }}';
+                            const winnerName = data.winner == 1 ? '{{ team_info.player1.name }}' : '{{ team_info.player2.name }}';
                             alert(`Player ${winnerName} wins!`);
                         }, 100); // Delay to ensure board is updated before alert
                     } else {
