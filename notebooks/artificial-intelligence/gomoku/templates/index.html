@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomoku Game</title>
     <style>
+        body{
+            background-color: #09223c;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         table {
             border-collapse: collapse;
             margin: 20px auto;
+            background-color: whitesmoke;
         }
         td {
             width: 30px;
             height: 30px;
             text-align: center;
             vertical-align: middle;
-            border: 1px solid #000;
+            border: 1px solid #969696;
             font-size: 20px;
         }
         .player1 {
@@ -23,10 +31,25 @@
         .player2 {
             color: blue;
         }
+        h1{
+            color: #09223c;
+            text-align: center;
+        }
+        .title{
+            background-color: #CDDC28;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        h2{
+            color: #ffffff;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>AICup: Gomoku Tournament</h1>
+    <div class="title">
+        <h1>Gisma's AICup: Gomoku Tournament</h1>
+    </div>
     <div id="team-info">
         <h2>Player 1: {{ team_info.player1.name }} ({{ team_info.player1.symbol }})</h2>
         <h2>Player 2: {{ team_info.player2.name }} ({{ team_info.player2.symbol }})</h2>
