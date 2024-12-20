@@ -1,4 +1,4 @@
-# AI for Sustainability
+# AI for Sustainable Development
 Artificial Intelligence (AI) has provided many applications to our daily life. AI can also be used to achieve sustainable development goals, such as environmental pollution detection, smart agriculture, energy consumption reduction, and CO2 reduction.
 
 This project aims at designing and implementing a new AI-based system to achieve sustainable development goals.
@@ -21,4 +21,5 @@ This project aims at designing and implementing a new AI-based system to achieve
 
 
 ## References
-[1] Cowls, J., Tsamados, A., Taddeo, M., & Floridi, L. (2021). The AI gambit: leveraging artificial intelligence to combat climate change—opportunities, challenges, and recommendations. Ai & Society, 1-25.
+[1] Mahdavi, M., Baghaei Mehr, R., & Debus, T. (2024). Combat greenwashing with GoalSpotter: Automatic sustainability objective detection in heterogeneous reports. In Proceedings of the 33rd ACM International Conference on Information and Knowledge Management (pp. 4752-4759).         
+[2] Cowls, J., Tsamados, A., Taddeo, M., & Floridi, L. (2021). The AI gambit: leveraging artificial intelligence to combat climate change—opportunities, challenges, and recommendations. Ai & Society, 1-25.

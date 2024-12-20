@@ -21,4 +21,5 @@ This project aims at designing and implementing a new system to process companie
 
 
 ## References
-[1] Cojoianu, T., Hoepner, A. G., Ifrim, G., & Lin, Y. (2020). Greenwatch-shing: Using AI to Detect Greenwashing. AccountancyPlus-CPA Ireland.
+[1] Mahdavi, M., Baghaei Mehr, R., & Debus, T. (2024). Combat greenwashing with GoalSpotter: Automatic sustainability objective detection in heterogeneous reports. In Proceedings of the 33rd ACM International Conference on Information and Knowledge Management (pp. 4752-4759).         
+[2] Cojoianu, T., Hoepner, A. G., Ifrim, G., & Lin, Y. (2020). Greenwatch-shing: Using AI to Detect Greenwashing. AccountancyPlus-CPA Ireland.

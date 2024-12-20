@@ -21,4 +21,4 @@ This project aims at designing and implementing a new automatic grader system th
 
 
 ## References
-[1] Manzoor, H., Naik, A., Shaffer, C. A., North, C., & Edwards, S. H. (2020, February). Auto-grading jupyter notebooks. In Proceedings of the 51st ACM Technical Symposium on Computer Science Education (pp. 1139-1144).
+[1] Manzoor, H., Naik, A., Shaffer, C. A., North, C., & Edwards, S. H. (2020). Auto-grading jupyter notebooks. In Proceedings of the 51st ACM Technical Symposium on Computer Science Education (pp. 1139-1144).

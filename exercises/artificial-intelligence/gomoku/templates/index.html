@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomoku Game</title>
+    <style>
+        body{
+            background-color: #09223c;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: whitesmoke;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #969696;
+            font-size: 20px;
+        }
+        .player1 {
+            color: red;
+        }
+        .player2 {
+            color: blue;
+        }
+        h1{
+            color: #09223c;
+            text-align: center;
+        }
+        .title{
+            background-color: #CDDC28;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        h2{
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Gisma's AICup: Gomoku Tournament</h1>
+    </div>
+    <div id="team-info">
+        <h2>Player 1: {{ team_info.player1.name }} ({{ team_info.player1.symbol }})</h2>
+        <h2>Player 2: {{ team_info.player2.name }} ({{ team_info.player2.symbol }})</h2>
+    </div>
+    <div>
+        <br><br><br>
+    </div>
+    <table id="gomoku-board"></table>
+    <script>
+        function updateBoard(board) {
+            const table = document.getElementById('gomoku-board');
+            table.innerHTML = '';
+            for (let i = 0; i < board.length; i++) {
+                const row = document.createElement('tr');
+                for (let j = 0; j < board[i].length; j++) {
+                    const cell = document.createElement('td');
+                    if (board[i][j] == 1) {  // Player 1
+                        cell.textContent = 'X';
+                        cell.classList.add('player1');
+                    } else if (board[i][j] == 2) {  // Player 2
+                        cell.textContent = 'O';
+                        cell.classList.add('player2');
+                    }
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+        }
+
+        function fetchBoard() {
+            fetch('/get_board')
+                .then(response => response.json())
+                .then(board => updateBoard(board));
+        }
+
+        function playTurn() {
+            fetch('/play_turn')
+                .then(response => response.json())
+                .then(data => {
+                    updateBoard(data.board);
+                    if (data.winner !== null) {
+                        setTimeout(() => {
+                            const winnerName = data.winner == 1 ? '{{ team_info.player1.name }}' : '{{ team_info.player2.name }}';
+                            alert(`Player ${winnerName} wins!`);
+                        }, 100); // Delay to ensure board is updated before alert
+                    } else {
+                        setTimeout(playTurn, 1000);
+                    }
+                });
+        }
+
+        fetchBoard();
+        playTurn();
+    </script>
+</body>
+</html>
