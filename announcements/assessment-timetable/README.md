@@ -14,6 +14,6 @@
 
 Please refer to the following files for each department:
 
-- [BS Department - Assessment Timetable.pdf](./BS%20Department%20-%20Assessment%20Timetable.pdf)
-- [CS Department - Assessment Timetable.pdf](./CS%20Department%20-%20Assessment%20Timetable.pdf)
+- [Business Department - Assessment Timetable.pdf](./Business%20Department%20-%20Assessment%20Timetable.pdf)
+- [Computer Science Department - Assessment Timetable.pdf](./Computer%20Science%20Department%20-%20Assessment%20Timetable.pdf)
 
