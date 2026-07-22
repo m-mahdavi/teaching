@@ -14,6 +14,6 @@
 
 Please refer to the following files for each department:
 
-- [Business Department - Assessment Timetable.pdf](./Business%20Department%20-%20Assessment%20Timetable.pdf)
+- [Business Department - Exams.pdf](./Business%20Department%20-%20Exams.pdf)
 - [Computer Science Department - Exams.pdf](./Computer%20Science%20Department%20-%20Exams.pdf)
 
