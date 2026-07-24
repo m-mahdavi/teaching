@@ -3,11 +3,10 @@
 
 ## Submissions
 
-| Type                         | Date           | Time  |
-|------------------------------|----------------|-------|
-| Normal Submissions           | Sep 18, 2026  | 18:00 |
-| Normal and Retake Theses     | Sep 18, 2026  | 18:00 |
-| Retake Submissions           | Sep 18, 2026  | 18:00 |
+| Type                                  | Date          | Time  |
+|---------------------------------------|---------------|-------|
+| First-Attempt and Retake Submissions  | Sep 18, 2026  | 18:00 |
+| First-Attempt and Retake Theses       | Sep 18, 2026  | 18:00 |
 
 
 ## Exams and Presentations
