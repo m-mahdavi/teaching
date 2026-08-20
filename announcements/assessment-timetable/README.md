@@ -6,7 +6,7 @@
 | Type                                              | Date          | Time  |
 |---------------------------------------------------|---------------|-------|
 | First-Attempt and Retake Module Submissions       | Sep 18, 2026  | 18:00 |
-| First-Attempt and Retake Dissertation Submissions | Sep 18, 2026  | 18:00 |
+| First-Attempt and Retake Dissertation Submissions | Sep 25, 2026  | 18:00 |
 
 
 ## Exams and Presentations
